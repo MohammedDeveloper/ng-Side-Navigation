@@ -1,0 +1,16 @@
+<!--side nav section-->
+<div class="floatingNav">
+  <div style="position: fixed;bottom:30%;right:0.8%; opacity: 0.6!important;">
+    <a class="fa fa-arrow-up" (click)="GotoTop();">
+    </a>
+    <div *ngFor="let nav of side_navigations" (click)="GotoAccordion(nav.name);">
+      <div>
+        <a class="fa fa-2x" [ngClass]="{'fa-circle': (accordionToNavigate == nav.name), 
+           'fa-circle-o': accordionToNavigate != nav.name}">
+           </a>
+      </div>
+    </div>
+    <a class="fa fa-arrow-down" (click)="GotoBottom();">
+    </a>
+  </div>
+</div>
