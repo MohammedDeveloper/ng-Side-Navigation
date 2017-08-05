@@ -4,11 +4,9 @@
     <a class="fa fa-arrow-up" (click)="GotoTop();">
     </a>
     <div *ngFor="let nav of side_navigations" (click)="GotoAccordion(nav.name);">
-      <div>
-        <a class="fa fa-2x" [ngClass]="{'fa-circle': (accordionToNavigate == nav.name), 
+      <a class="fa fa-2x" [ngClass]="{'fa-circle': (accordionToNavigate == nav.name), 
            'fa-circle-o': accordionToNavigate != nav.name}">
            </a>
-      </div>
     </div>
     <a class="fa fa-arrow-down" (click)="GotoBottom();">
     </a>

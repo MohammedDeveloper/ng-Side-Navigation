@@ -9,14 +9,14 @@ export class HomeComponent {
 
   /// Initializations and declarations..
   side_navs: any[] = [
-    { name: "collapseOne", default: true },
-    { name: "collapseTwo" },
-    { name: "collapseThree" },
-    { name: "collapseFour" },
-    { name: "collapseFive" },
-    { name: "collapseSix" },
-    { name: "collapseSeven" },
-    { name: "collapseEight" }
+    { name: "collapse1", default: true },
+    { name: "collapse2" },
+    { name: "collapse3" },
+    { name: "collapse4" },
+    { name: "collapse5" },
+    { name: "collapse6" },
+    { name: "collapse7" },
+    { name: "collapse8" }
   ];
 
   constructor() { }
